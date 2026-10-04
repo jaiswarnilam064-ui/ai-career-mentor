@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+}
+
+/* Navigation */
+
+header {
+    background: white;
+    padding: 20px 7%;
+    border-bottom: 1px solid #e8e8ee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4f46e5;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title {
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #4f46e5;
+}
+
+.hero-text {
+    color: #606778;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* Buttons */
+
+.main-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 28px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background: #3730a3;
+}
+
+
+/* Assessment */
+
+.assessment {
+    max-width: 850px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.assessment h2,
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    color: #687083;
+    margin-bottom: 45px;
+}
+
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d9dce5;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4f46e5;
+}
+
+
+/* Result */
+
+.result-section {
+    background: #eef2ff;
+    padding: 100px 25px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.result-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.result-section p {
+    color: #606778;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* About */
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.about p {
+    color: #606778;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+}
+/* Career Details */
+
+.career-details {
+    max-width: 900px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.detail-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.detail-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #4f46e5;
+}
+
+.detail-card p {
+    margin-bottom: 20px;
+}
+
+.detail-card ul,
+.detail-card ol {
+    padding-left: 22px;
+    color: #4b5563;
+    line-height: 2;
+}
+
+.detail-card li {
+    margin-bottom: 5px;
+}
+
+
+/* Mobile Career Cards */
+
+@media (max-width: 700px) {
+
+    .career-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ===============================
+   AI CAREER CHATBOT
+================================ */
+
+.chatbot-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: #f8f7ff;
+}
+
+.chatbot-section h2 {
+    margin: 10px 0;
+}
+
+.chatbot-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #666;
+}
+
+.chatbot-box {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.bot-message,
+.user-message {
+    max-width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background: #eeeeff;
+    color: #222;
+}
+
+.user-message {
+    background: #4f46e5;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#chatInput {
+    flex: 1;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#chatInput:focus {
+    border-color: #4f46e5;
+}
+
+#chatSend {
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ===============================
+   CHATBOT QUICK BUTTONS
+================================ */
+
+.chat-quick-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.chat-quick-buttons button {
+    padding: 9px 16px;
+    border: 1px solid #4f46e5;
+    background: white;
+    color: #4f46e5;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.chat-quick-buttons button:hover {
+    background: #4f46e5;
+    color: white;
+}

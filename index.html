@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Career Mentor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">AI Career Mentor</div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#assessment">Assessment</a>
+                <a href="#careers">Careers</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">YOUR PERSONAL CAREER GUIDE</p>
+
+            <h1>
+                Discover a Career<br>
+                That Fits <span>You.</span>
+            </h1>
+
+            <p class="hero-text">
+                Find career paths based on your education, skills,
+                interests and goals. Get personalized guidance
+                to plan your future with confidence.
+            </p>
+
+            <a href="#assessment" class="main-button">
+                Start Career Assessment →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Assessment -->
+    <section id="assessment" class="assessment">
+
+        <p class="small-title">CAREER ASSESSMENT</p>
+
+        <h2>Let's Understand You</h2>
+
+        <p class="section-text">
+            Tell us about yourself and we'll help you explore
+            suitable career options.
+        </p>
+
+        <form id="careerForm">
+
+           
+<div class="form-group">
+
+    <label>What did you study in 12th?</label>
+
+    <select id="stream" required>
+
+        <option value="">Select your 12th stream</option>
+
+        <option value="science">Science</option>
+
+        <option value="pcm">Science - PCM</option>
+<option value="pcb">Science - PCB</option>
+<option value="pcmb">Science - PCMB</option>
+
+        <option value="commerce">Commerce</option>
+
+        <option value="commerce-maths">Commerce - With Mathematics</option>
+<option value="commerce-nomaths">Commerce - Without Mathematics</option>
+
+        <option value="arts">Arts / Humanities</option>
+
+        <option value="arts-humanities">Arts / Humanities</option>
+<option value="arts-economics">Arts - Economics</option>
+<option value="arts-psychology">Arts - Psychology</option>
+<option value="arts-sociology">Arts - Sociology</option>
+<option value="arts-other">Arts - Other</option>
+
+        <option value="vocational">Vocational / Other</option>
+
+        <option value="vocational-diploma">Diploma / Polytechnic</option>
+<option value="vocational-it">IT / Computer Course</option>
+<option value="vocational-design">Design / Creative Course</option>
+<option value="vocational-other">Other</option>
+
+    </select>
+
+</div>
+
+            <div class="form-group">
+
+                <div class="form-group">
+
+    <label>What are you doing after 12th?</label>
+
+    <select id="currentEducation" required>
+
+        <option value="">Select your current education</option>
+
+        <option value="12th">Just completed 12th</option>
+
+        <option value="diploma">Diploma</option>
+
+        <option value="bca">BCA</option>
+
+        <option value="btech">B.Tech / B.E.</option>
+
+        <option value="bsc">B.Sc</option>
+
+        <option value="bcom">B.Com</option>
+
+        <option value="bba">BBA</option>
+
+        <option value="ba">BA</option>
+
+        <option value="other">Other</option>
+
+    </select>
+
+</div>
+                <div class="form-group">
+
+    <label>What skills do you currently have?</label>
+
+    <div class="skills-grid">
+
+        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+        <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+        <label><input type="checkbox" name="skills" value="python"> Python</label>
+        <label><input type="checkbox" name="skills" value="java"> Java</label>
+        <label><input type="checkbox" name="skills" value="cpp"> C++</label>
+        <label><input type="checkbox" name="skills" value="sql"> SQL</label>
+
+        <label><input type="checkbox" name="skills" value="excel"> Excel</label>
+        <label><input type="checkbox" name="skills" value="statistics"> Statistics</label>
+        <label><input type="checkbox" name="skills" value="data-analysis"> Data Analysis</label>
+
+        <label><input type="checkbox" name="skills" value="machine-learning"> Machine Learning</label>
+        <label><input type="checkbox" name="skills" value="networking"> Networking</label>
+        <label><input type="checkbox" name="skills" value="linux"> Linux</label>
+        <label><input type="checkbox" name="skills" value="cybersecurity"> Cybersecurity</label>
+
+        <label><input type="checkbox" name="skills" value="communication"> Communication</label>
+        <label><input type="checkbox" name="skills" value="leadership"> Leadership</label>
+        <label><input type="checkbox" name="skills" value="management"> Management</label>
+        <label><input type="checkbox" name="skills" value="marketing"> Marketing</label>
+
+        <label><input type="checkbox" name="skills" value="writing"> Writing</label>
+        <label><input type="checkbox" name="skills" value="creativity"> Creativity</label>
+        <label><input type="checkbox" name="skills" value="design"> Design</label>
+        <label><input type="checkbox" name="skills" value="research"> Research</label>
+
+    </div>
+
+</div>
+
+
+            <div class="form-group">
+
+                <div class="form-group">
+
+    <label>What are your strengths?</label>
+
+    <select id="strength" required>
+
+        <option value="">Select your strength</option>
+
+        <option value="problem-solving">Problem Solving</option>
+
+        <option value="communication">Communication</option>
+
+        <option value="creativity">Creativity</option>
+
+        <option value="leadership">Leadership</option>
+
+        <option value="mathematics">Mathematics</option>
+
+        <option value="technical">Technical Skills</option>
+
+        <option value="writing">Writing</option>
+
+        <option value="management">Management</option>
+
+    </select>
+
+    <div class="form-group">
+
+    <label>What are you interested in?</label>
+
+    <select id="interest" required>
+
+        <option value="">Select your interest</option>
+
+        <option value="medical">Medicine & Healthcare</option>
+        <option value="engineering">Engineering & Technology</option>
+        <option value="government">Government & Civil Services</option>
+        <option value="law">Law & Legal Services</option>
+        <option value="education">Teaching & Education</option>
+        <option value="finance">Finance & Accounting</option>
+        <option value="business">Business & Entrepreneurship</option>
+        <option value="science">Science & Research</option>
+        <option value="technology">Computer & IT</option>
+        <option value="design">Design & Creativity</option>
+        <option value="media">Media & Journalism</option>
+        <option value="psychology">Psychology & Social Sciences</option>
+        <option value="defence">Defence & Armed Forces</option>
+        <option value="management">Management</option>
+        <option value="travel">Travel & Hospitality</option>
+        <option value="other">Other</option>
+
+    </select>
+
+</div>
+
+
+            <div class="form-group">
+
+    <label>What career do you want to explore?</label>
+
+    <select id="goal" required>
+
+        <option value="">Select your career goal</option>
+
+        <option value="doctor">Doctor / Medical</option>
+        <option value="engineer">Engineer</option>
+        <option value="ias">IAS / Civil Services</option>
+        <option value="lawyer">Lawyer</option>
+        <option value="ca">Chartered Accountant (CA)</option>
+        <option value="cs">Company Secretary (CS)</option>
+        <option value="teacher">Teacher / Professor</option>
+        <option value="psychologist">Psychologist</option>
+        <option value="journalist">Journalist / Media</option>
+        <option value="designer">Designer</option>
+        <option value="software">Software Developer</option>
+
+        <option value="ai">AI / Machine Learning</option>
+<option value="uiux">UI/UX Designer</option>
+<option value="cloud">Cloud Computing</option>
+<option value="data">Data Analyst</option>
+<option value="cybersecurity">Cybersecurity</option>
+<option value="banking">Banking / Finance</option>
+<option value="defence">Defence / Armed Forces</option>
+<option value="research">Research / Scientist</option>
+<option value="hospitality">Travel / Hospitality</option>
+<option value="content">Content Creator</option>
+        <option value="data">Data Analyst</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="cloud">Cloud Computing</option>
+        <option value="business">Business / Entrepreneur</option>
+        <option value="banking">Banking / Finance</option>
+        <option value="defence">Defence / Armed Forces</option>
+        <option value="research">Research / Scientist</option>
+        <option value="other">Other</option>
+
+    </select>
+
+</div>
+
+
+            <button type="submit" class="main-button">
+                Get My Career Recommendation
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section id="result" class="result-section">
+
+    <p class="small-title">YOUR CAREER RESULT</p>
+
+    <h2 id="careerResult">
+        Your recommended career will appear here.
+    </h2>
+
+    <p id="careerDescription"></p>
+
+    <div class="match-score-box">
+
+    <h3>Career Match Score</h3>
+
+    <div class="match-score">
+        <span id="matchScore">0%</span>
+    </div>
+
+    <div class="match-progress">
+        <div id="matchProgress"></div>
+    </div>
+
+    <p id="matchMessage">
+        Your career match will appear here.
+    </p>
+
+</div>
+
+    <div class="career-details">
+
+        <div class="detail-card">
+            <h3>Skill Gap Analysis</h3>
+
+            <p>
+                Based on your selected career, these are the
+                important skills you should develop.
+            </p>
+
+            <div id="skillGap"></div>
+        </div>
+
+
+        <div class="detail-card">
+            <h3>Learning Roadmap</h3>
+
+            <p>
+                Follow these steps to gradually prepare
+                yourself for your recommended career.
+            </p>
+
+            <div id="roadmap"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- About -->
+    <!-- AI CAREER CHATBOT -->
+
+<section id="chatbot" class="chatbot-section">
+
+    <p class="small-title">AI CAREER ASSISTANT</p>
+
+    <h2>Ask Your Career Question</h2>
+
+    <p class="chatbot-intro">
+        Get quick guidance about careers, skills, salaries,
+        courses and career preparation.
+    </p>
+
+    <div class="chatbot-box">
+
+        <div id="chatMessages" class="chat-messages">
+
+            <div class="bot-message">
+                Hi! I'm your Career Assistant. Ask me anything
+                about careers, skills, courses or career preparation.
+            </div>
+
+        </div>
+
+        <div class="chat-quick-buttons">
+
+    <button type="button" onclick="askQuickQuestion('What skills do I need for my career?')">
+        Skills
+    </button>
+
+    <button type="button" onclick="askQuickQuestion('What salary can I expect?')">
+        Salary
+    </button>
+
+    <button type="button" onclick="askQuickQuestion('What is the roadmap for this career?')">
+        Roadmap
+    </button>
+
+    <button type="button" onclick="askQuickQuestion('What courses should I learn?')">
+        Courses
+    </button>
+
+    <button type="button" onclick="askQuickQuestion('What jobs can I get?')">
+        Jobs
+    </button>
+
+</div>
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask your career question..."
+            >
+
+            <button
+                type="button"
+                id="chatSend"
+                class="main-button"
+            >
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="about" class="about">
+
+        <p class="small-title">ABOUT</p>
+
+        <h2>What is AI Career Mentor?</h2>
+
+        <p>
+            AI Career Mentor is a career guidance platform designed
+            to help students understand their career options,
+            identify required skills and create a learning path
+            according to their goals.
+        </p>
+
+    </section>
+
+
+    <footer>
+        <p>AI Career Mentor © 2026</p>
+    </footer>
+
+   <script>
+
+const form = document.getElementById("careerForm");
+
+const stream = document.getElementById("stream");
+const currentEducation = document.getElementById("currentEducation");
+
+stream.addEventListener("change", function() {
+
+    if (stream.value === "science") {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="btech">B.Tech / B.E.</option>' +
+            '<option value="bca">BCA</option>' +
+            '<option value="bsc">B.Sc</option>' +
+            '<option value="bsc-cs">B.Sc Computer Science</option>' +
+            '<option value="bsc-it">B.Sc IT</option>' +
+            '<option value="bsc-data">B.Sc Data Science</option>' +
+            '<option value="bsc-maths">B.Sc Mathematics</option>' +
+            '<option value="bsc-physics">B.Sc Physics</option>' +
+            '<option value="bsc-chemistry">B.Sc Chemistry</option>' +
+            '<option value="bsc-biotech">B.Sc Biotechnology</option>' +
+            '<option value="bsc-microbiology">B.Sc Microbiology</option>' +
+            '<option value="bsc-biochemistry">B.Sc Biochemistry</option>' +
+            '<option value="bsc-zoology">B.Sc Zoology</option>' +
+            '<option value="bsc-botany">B.Sc Botany</option>' +
+            '<option value="bsc-life-science">B.Sc Life Sciences</option>' +
+            '<option value="btech-cs">B.Tech Computer Science</option>' +
+            '<option value="btech-it">B.Tech Information Technology</option>' +
+            '<option value="btech-ai">B.Tech AI / Machine Learning</option>' +
+            '<option value="btech-civil">B.Tech Civil Engineering</option>' +
+            '<option value="btech-mechanical">B.Tech Mechanical Engineering</option>' +
+            '<option value="btech-electrical">B.Tech Electrical Engineering</option>' +
+            '<option value="btech-electronics">B.Tech Electronics Engineering</option>' +
+            '<option value="barch">B.Arch</option>' +
+            '<option value="bdes">B.Des</option>' +
+            '<option value="research">Research / Scientist</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else if (stream.value === "pcm") {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="btech">B.Tech / B.E.</option>' +
+            '<option value="btech-cs">B.Tech Computer Science</option>' +
+            '<option value="btech-it">B.Tech Information Technology</option>' +
+            '<option value="btech-ai">B.Tech AI / Machine Learning</option>' +
+            '<option value="btech-civil">B.Tech Civil Engineering</option>' +
+            '<option value="btech-mechanical">B.Tech Mechanical Engineering</option>' +
+            '<option value="btech-electrical">B.Tech Electrical Engineering</option>' +
+            '<option value="btech-electronics">B.Tech Electronics Engineering</option>' +
+            '<option value="bsc">B.Sc</option>' +
+            '<option value="bsc-cs">B.Sc Computer Science</option>' +
+            '<option value="bsc-it">B.Sc IT</option>' +
+            '<option value="bsc-data">B.Sc Data Science</option>' +
+            '<option value="bsc-maths">B.Sc Mathematics</option>' +
+            '<option value="bsc-physics">B.Sc Physics</option>' +
+            '<option value="bsc-chemistry">B.Sc Chemistry</option>' +
+            '<option value="bca">BCA</option>' +
+            '<option value="barch">B.Arch</option>' +
+            '<option value="bdes">B.Des</option>' +
+            '<option value="research">Research / Scientist</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else if (stream.value === "pcb") {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="mbbs">MBBS</option>' +
+            '<option value="bds">BDS - Dental</option>' +
+            '<option value="bams">BAMS - Ayurveda</option>' +
+            '<option value="bhms">BHMS - Homeopathy</option>' +
+            '<option value="bpt">BPT - Physiotherapy</option>' +
+            '<option value="bsc-nursing">B.Sc Nursing</option>' +
+            '<option value="bpharm">B.Pharm - Pharmacy</option>' +
+            '<option value="bsc">B.Sc</option>' +
+            '<option value="bsc-biotech">B.Sc Biotechnology</option>' +
+            '<option value="bsc-microbiology">B.Sc Microbiology</option>' +
+            '<option value="bsc-biochemistry">B.Sc Biochemistry</option>' +
+            '<option value="bsc-zoology">B.Sc Zoology</option>' +
+            '<option value="bsc-botany">B.Sc Botany</option>' +
+            '<option value="bsc-life-science">B.Sc Life Sciences</option>' +
+            '<option value="bsc-psychology">B.Sc Psychology</option>' +
+            '<option value="research">Research / Scientist</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else if (stream.value === "pcmb") {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="mbbs">MBBS</option>' +
+            '<option value="bds">BDS - Dental</option>' +
+            '<option value="bams">BAMS - Ayurveda</option>' +
+            '<option value="bhms">BHMS - Homeopathy</option>' +
+            '<option value="bpt">BPT - Physiotherapy</option>' +
+            '<option value="bsc-nursing">B.Sc Nursing</option>' +
+            '<option value="bpharm">B.Pharm - Pharmacy</option>' +
+            '<option value="btech">B.Tech / B.E.</option>' +
+            '<option value="btech-cs">B.Tech Computer Science</option>' +
+            '<option value="btech-it">B.Tech Information Technology</option>' +
+            '<option value="btech-ai">B.Tech AI / Machine Learning</option>' +
+            '<option value="btech-civil">B.Tech Civil Engineering</option>' +
+            '<option value="btech-mechanical">B.Tech Mechanical Engineering</option>' +
+            '<option value="btech-electrical">B.Tech Electrical Engineering</option>' +
+            '<option value="btech-electronics">B.Tech Electronics Engineering</option>' +
+            '<option value="bsc-cs">B.Sc Computer Science</option>' +
+            '<option value="bsc-it">B.Sc IT</option>' +
+            '<option value="bsc-data">B.Sc Data Science</option>' +
+            '<option value="bsc-maths">B.Sc Mathematics</option>' +
+            '<option value="bsc-physics">B.Sc Physics</option>' +
+            '<option value="bsc-chemistry">B.Sc Chemistry</option>' +
+            '<option value="bsc-biotech">B.Sc Biotechnology</option>' +
+            '<option value="bsc-microbiology">B.Sc Microbiology</option>' +
+            '<option value="bsc-zoology">B.Sc Zoology</option>' +
+            '<option value="bsc-botany">B.Sc Botany</option>' +
+            '<option value="bsc-life-science">B.Sc Life Sciences</option>' +
+            '<option value="bca">BCA</option>' +
+            '<option value="barch">B.Arch</option>' +
+            '<option value="bdes">B.Des</option>' +
+            '<option value="research">Research / Scientist</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else if (
+        stream.value === "commerce" ||
+        stream.value === "commerce-maths" ||
+        stream.value === "commerce-nomaths"
+    ) {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="bcom">B.Com</option>' +
+            '<option value="bcom-accounting">B.Com Accounting & Finance</option>' +
+            '<option value="bcom-banking">B.Com Banking & Finance</option>' +
+            '<option value="bcom-finance">B.Com Financial Markets</option>' +
+            '<option value="bba">BBA</option>' +
+            '<option value="bms">BMS - Management Studies</option>' +
+            '<option value="ca">CA - Chartered Accountancy</option>' +
+            '<option value="cs">CS - Company Secretary</option>' +
+            '<option value="cma">CMA - Cost & Management Accounting</option>' +
+            '<option value="baf">BAF - Accounting & Finance</option>' +
+            '<option value="bbi">BBI - Banking & Insurance</option>' +
+            '<option value="bba-finance">BBA Finance</option>' +
+            '<option value="economics">B.A. / B.Sc Economics</option>' +
+            '<option value="banking">Banking & Finance</option>' +
+            '<option value="finance">Finance</option>' +
+            '<option value="management">Management</option>' +
+            '<option value="statistics">Statistics</option>' +
+            '<option value="actuarial">Actuarial Science</option>' +
+            '<option value="law">Law</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else if (
+        stream.value === "arts" ||
+        stream.value === "arts-humanities" ||
+        stream.value === "arts-economics" ||
+        stream.value === "arts-psychology" ||
+        stream.value === "arts-sociology" ||
+        stream.value === "arts-other"
+    ) {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="ba">B.A.</option>' +
+            '<option value="ba-english">B.A. English</option>' +
+            '<option value="ba-history">B.A. History</option>' +
+            '<option value="ba-political-science">B.A. Political Science</option>' +
+            '<option value="ba-economics">B.A. Economics</option>' +
+            '<option value="ba-sociology">B.A. Sociology</option>' +
+            '<option value="ba-psychology">B.A. Psychology</option>' +
+            '<option value="ba-geography">B.A. Geography</option>' +
+            '<option value="ba-philosophy">B.A. Philosophy</option>' +
+            '<option value="ba-literature">B.A. Literature</option>' +
+            '<option value="law">LLB / Law</option>' +
+            '<option value="journalism">Journalism / Mass Media</option>' +
+            '<option value="mass-communication">Mass Communication</option>' +
+            '<option value="design">Design</option>' +
+            '<option value="bdes">B.Des</option>' +
+            '<option value="bfa">BFA - Fine Arts</option>' +
+            '<option value="psychology">Psychology</option>' +
+            '<option value="education">B.Ed / Education</option>' +
+            '<option value="social-work">Social Work</option>' +
+            '<option value="hotel-management">Hotel Management</option>' +
+            '<option value="travel-tourism">Travel & Tourism</option>' +
+            '<option value="fashion">Fashion Design</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+    else {
+
+        currentEducation.innerHTML =
+            '<option value="">Select your current education</option>' +
+            '<option value="diploma">Diploma / Polytechnic</option>' +
+            '<option value="iti">ITI</option>' +
+            '<option value="vocational-it">IT / Computer Course</option>' +
+            '<option value="vocational-design">Design / Creative Course</option>' +
+            '<option value="hotel-management">Hotel Management</option>' +
+            '<option value="travel-tourism">Travel & Tourism</option>' +
+            '<option value="fashion">Fashion Design</option>' +
+            '<option value="healthcare">Healthcare Course</option>' +
+            '<option value="skill-course">Skill / Certificate Course</option>' +
+            '<option value="other">Other</option>';
+
+    }
+
+});
+
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const interest = document.getElementById("interest").value;
+    const goal = document.getElementById("goal").value;
+
+    const selectedSkills =
+        document.querySelectorAll('input[name="skills"]:checked');
+
+    let skills = [];
+
+    selectedSkills.forEach(skill => {
+        skills.push(skill.value.toLowerCase());
+    });
+
+    let skillList = skills;
+    let missingSkills = [];
+
+    if (interest === "development") {
+
+        const required = ["html", "css", "javascript", "python", "sql"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "data") {
+
+        const required = ["excel", "sql", "python", "statistics"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "ai") {
+
+        const required = ["python", "machine learning", "sql", "mathematics"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "security") {
+
+        const required = ["networking", "linux", "python", "cybersecurity"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "cloud") {
+
+        const required = ["linux", "networking", "devops", "databases"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "design") {
+
+        const required = ["ui design", "ux", "wireframing", "prototyping"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+    else if (interest === "business") {
+
+        const required = ["marketing", "communication", "management", "analytics"];
+
+        missingSkills = required.filter(skill =>
+            !skillList.includes(skill)
+        );
+
+    }
+
+
+    let career = "";
+    
+    // ===============================
+// COMPLETE CAREER INFORMATION
+// ===============================
+
+const careerInfo = {
+
+    doctor: {
+        career: "Doctor / Medical Professional",
+        description: "Diagnose, treat and prevent diseases while providing medical care to patients.",
+        jobs: "General Physician, Specialist Doctor, Surgeon, Medical Officer",
+        salary: "₹5–12 LPA initially; can increase significantly with specialization and experience."
+    },
+
+    engineer: {
+        career: "Engineer",
+        description: "Apply engineering principles to design, develop and improve products, systems and technology.",
+        jobs: "Software Engineer, Mechanical Engineer, Civil Engineer, Electrical Engineer",
+        salary: "₹3–8 LPA initially; experienced engineers can earn significantly more."
+    },
+
+    ias: {
+        career: "IAS / Civil Services Officer",
+        description: "Work in public administration and help implement government policies and manage public services.",
+        jobs: "IAS Officer, Administrative Officer, Government Officer",
+        salary: "Government pay starts according to the applicable pay level and increases with seniority."
+    },
+
+    lawyer: {
+        career: "Lawyer",
+        description: "Provide legal advice, represent clients and work with laws, contracts and legal proceedings.",
+        jobs: "Advocate, Legal Advisor, Corporate Lawyer, Legal Consultant",
+        salary: "₹3–8 LPA initially; experienced lawyers can earn substantially more."
+    },
+
+    ca: {
+        career: "Chartered Accountant",
+        description: "Work in accounting, auditing, taxation, financial reporting and business finance.",
+        jobs: "Chartered Accountant, Auditor, Tax Consultant, Financial Analyst",
+        salary: "₹6–12 LPA initially; experienced professionals can earn much more."
+    },
+
+    cs: {
+        career: "Company Secretary",
+        description: "Handle corporate compliance, governance, legal documentation and regulatory requirements.",
+        jobs: "Company Secretary, Compliance Officer, Corporate Governance Professional",
+        salary: "₹4–8 LPA initially; increases with experience and company size."
+    },
+
+    teacher: {
+        career: "Teacher / Educator",
+        description: "Teach students, create learning plans and help learners develop academic and practical knowledge.",
+        jobs: "School Teacher, College Lecturer, Tutor, Online Educator",
+        salary: "₹2.5–6 LPA initially; varies by institution, qualification and experience."
+    },
+
+    psychologist: {
+        career: "Psychologist",
+        description: "Study human behaviour and provide psychological assessment, counselling and support.",
+        jobs: "Psychologist, Counsellor, Mental Health Professional, Behavioural Therapist",
+        salary: "₹3–7 LPA initially; specialization and experience can increase earnings."
+    },
+
+    journalist: {
+        career: "Journalist",
+        description: "Research, verify and communicate news and information through media platforms.",
+        jobs: "Journalist, Reporter, News Writer, Editor, Digital Journalist",
+        salary: "₹2.5–6 LPA initially; experienced media professionals can earn more."
+    },
+
+    designer: {
+        career: "Designer",
+        description: "Create visual concepts and designs for digital, business, media and creative projects.",
+        jobs: "Graphic Designer, Visual Designer, Brand Designer, Creative Designer",
+        salary: "₹2.5–7 LPA initially; freelance and experienced designers can earn more."
+    },
+
+    software: {
+        career: "Software Developer",
+        description: "Design, develop, test and maintain software applications and digital products.",
+        jobs: "Software Developer, Web Developer, Frontend Developer, Backend Developer",
+        salary: "₹3–8 LPA initially; experienced developers can earn significantly more."
+    },
+
+    ai: {
+        career: "AI / Machine Learning Engineer",
+        description: "Build intelligent systems using programming, machine learning, data and artificial intelligence.",
+        jobs: "AI Engineer, ML Engineer, AI Developer, Machine Learning Scientist",
+        salary: "₹5–12 LPA initially; experienced AI professionals can earn significantly more."
+    },
+
+    uiux: {
+        career: "UI/UX Designer",
+        description: "Design user-friendly digital interfaces and improve the overall user experience of products.",
+        jobs: "UI Designer, UX Designer, Product Designer, UX Researcher",
+        salary: "₹3–8 LPA initially; experienced designers can earn more."
+    },
+
+    cloud: {
+        career: "Cloud Computing Professional",
+        description: "Build, manage and maintain applications and infrastructure using cloud technologies.",
+        jobs: "Cloud Engineer, Cloud Administrator, DevOps Engineer, Cloud Architect",
+        salary: "₹4–10 LPA initially; experienced cloud professionals can earn significantly more."
+    },
+
+    data: {
+        career: "Data Analyst",
+        description: "Analyse data to identify patterns, generate insights and support business decisions.",
+        jobs: "Data Analyst, Business Analyst, Reporting Analyst, BI Analyst",
+        salary: "₹3–8 LPA initially; experienced analysts can earn more."
+    },
+
+    cybersecurity: {
+        career: "Cybersecurity Professional",
+        description: "Protect computer systems, networks and data from security threats and attacks.",
+        jobs: "Cybersecurity Analyst, Security Engineer, SOC Analyst, Ethical Hacker",
+        salary: "₹3–8 LPA initially; specialized professionals can earn significantly more."
+    },
+
+    banking: {
+        career: "Banking & Finance Professional",
+        description: "Work in banking, financial services, customer management, analysis and financial operations.",
+        jobs: "Bank Officer, Probationary Officer, Financial Analyst, Banking Associate",
+        salary: "₹3–8 LPA initially; varies by bank, role and experience."
+    },
+
+    defence: {
+        career: "Defence Professional",
+        description: "Serve the country through military, defence, leadership and strategic roles.",
+        jobs: "Army Officer, Navy Officer, Air Force Officer, Defence Professional",
+        salary: "Government pay depends on rank, service and applicable allowances."
+    },
+
+    research: {
+        career: "Research Scientist",
+        description: "Conduct scientific or technical research to discover knowledge and develop new solutions.",
+        jobs: "Research Scientist, Research Associate, Scientific Officer, R&D Professional",
+        salary: "₹4–10 LPA initially; varies by organization, qualification and specialization."
+    },
+
+    hospitality: {
+        career: "Hospitality & Tourism Professional",
+        description: "Work in hotels, tourism, travel and customer experience management.",
+        jobs: "Hotel Manager, Travel Consultant, Event Manager, Tourism Professional",
+        salary: "₹2.5–7 LPA initially; management and international roles can pay more."
+    },
+
+    content: {
+        career: "Content Creator / Digital Media Professional",
+        description: "Create and distribute engaging digital content across social media and online platforms.",
+        jobs: "Content Creator, Social Media Manager, Video Creator, Copywriter",
+        salary: "₹2.5–8 LPA in salaried roles; creator income varies widely."
+    },
+
+    business: {
+        career: "Business / Management Professional",
+        description: "Build, manage and grow businesses through strategy, marketing, operations and leadership.",
+        jobs: "Business Manager, Marketing Manager, Operations Manager, Entrepreneur",
+        salary: "₹3–10 LPA initially; business and management income varies widely."
+    },
+
+    other: {
+        career: "Career Professional",
+        description: "Explore your interests, build relevant skills and gain practical experience in your chosen field.",
+        jobs: "Depends on your selected career path and specialization.",
+        salary: "Depends on the career, industry, skills and experience."
+    }
+
+};
+
+    let description = "";
+    let requiredSkills = "";
+    let jobRoles = "";
+    let salary = "";
+    let roadmapSteps = "";
+
+
+    if (goal === "doctor") {
+
+        career = "Doctor / Medical Professional";
+        description = "A career in medicine and healthcare focused on diagnosing, treating and caring for patients.";
+        requiredSkills = "Biology, Communication, Problem Solving, Empathy, Scientific Knowledge";
+
+    }
+
+    else if (goal === "engineer") {
+
+        career = "Engineer";
+        description = "Engineering offers multiple paths such as software, mechanical, civil, electrical and electronics engineering.";
+        requiredSkills = "Mathematics, Problem Solving, Technical Skills, Logical Thinking";
+
+    }
+
+    else if (goal === "ias") {
+
+        career = "IAS / Civil Services";
+        description = "Civil services careers involve public administration, governance and implementation of government policies.";
+        requiredSkills = "General Knowledge, Current Affairs, Communication, Analytical Thinking, Leadership";
+
+    }
+
+    else if (goal === "lawyer") {
+
+        career = "Lawyer / Legal Professional";
+        description = "A legal career involves understanding laws, analysing cases and representing or advising clients.";
+        requiredSkills = "Legal Reasoning, Communication, Research, Writing, Analytical Thinking";
+
+    }
+
+    else if (goal === "ca") {
+
+        career = "Chartered Accountant";
+        description = "CA is a professional career focused on accounting, taxation, auditing and financial management.";
+        requiredSkills = "Accounting, Mathematics, Taxation, Finance, Analytical Skills";
+
+    }
+
+    else if (goal === "cs") {
+
+        career = "Company Secretary";
+        description = "Company Secretaries work in corporate compliance, governance, legal documentation and regulations.";
+        requiredSkills = "Corporate Law, Communication, Compliance, Documentation, Management";
+
+    }
+
+    else if (goal === "teacher") {
+
+        career = "Teacher / Professor";
+        description = "Teaching involves developing subject knowledge, explaining concepts and helping students learn.";
+        requiredSkills = "Communication, Subject Knowledge, Presentation, Patience, Leadership";
+
+    }
+
+    else if (goal === "psychologist") {
+
+        career = "Psychologist";
+        description = "Psychology involves understanding human behaviour, emotions and mental processes.";
+        requiredSkills = "Psychology, Communication, Research, Observation, Empathy";
+
+    }
+
+    else if (goal === "journalist") {
+
+        career = "Journalist / Media Professional";
+        description = "Journalism and media careers involve research, reporting, writing and communicating information.";
+        requiredSkills = "Writing, Communication, Research, Current Affairs, Creativity";
+
+    }
+
+    else if (goal === "designer" || goal === "uiux") {
+
+        career = "UI/UX / Creative Designer";
+        description = "Design careers focus on creating useful, attractive and user-friendly visual experiences.";
+        requiredSkills = "UI Design, UX, Creativity, Wireframing, Prototyping";
+
+    }
+
+    else if (goal === "software") {
+
+        career = "Software / Web Developer";
+        description = "Software development involves building websites, applications and software solutions.";
+        requiredSkills = "HTML, CSS, JavaScript, Python, SQL, Git";
+
+    }
+
+    else if (goal === "ai") {
+
+        career = "AI / Machine Learning Professional";
+        description = "AI and Machine Learning involve developing systems that learn from data and solve complex problems.";
+        requiredSkills = "Python, Machine Learning, Mathematics, Statistics, SQL";
+
+    }
+
+    else if (goal === "data") {
+
+        career = "Data Analyst";
+        description = "Data analysts use data, statistics and analytical tools to find useful insights for organisations.";
+        requiredSkills = "Excel, SQL, Python, Statistics, Data Analysis";
+
+    }
+
+    else if (goal === "cybersecurity") {
+
+        career = "Cybersecurity Professional";
+        description = "Cybersecurity focuses on protecting computers, networks, applications and data from security threats.";
+        requiredSkills = "Networking, Linux, Python, Cybersecurity, Problem Solving";
+
+    }
+
+    else if (goal === "cloud") {
+
+        career = "Cloud / DevOps Professional";
+        description = "Cloud professionals work with cloud infrastructure, deployment, servers and modern IT systems.";
+        requiredSkills = "Linux, Networking, Cloud Computing, DevOps, Databases";
+
+    }
+
+    else if (goal === "business") {
+
+        career = "Business / Entrepreneur";
+        description = "Business careers involve identifying opportunities, managing resources, understanding customers and building organisations.";
+        requiredSkills = "Communication, Management, Marketing, Finance, Leadership";
+
+    }
+
+    else if (goal === "banking") {
+
+        career = "Banking / Finance Professional";
+        description = "Banking and finance careers involve financial services, banking operations, investments and financial analysis.";
+        requiredSkills = "Finance, Accounting, Mathematics, Communication, Analytical Skills";
+
+    }
+
+    else if (goal === "defence") {
+
+        career = "Defence / Armed Forces";
+        description = "Defence careers involve serving in the armed forces and working in areas such as operations, leadership and national security.";
+        requiredSkills = "Discipline, Leadership, Communication, Physical Fitness, Decision Making";
+
+    }
+
+    else if (goal === "research") {
+
+        career = "Research / Scientist";
+        description = "Research careers involve scientific investigation, experimentation, analysis and development of new knowledge.";
+        requiredSkills = "Research, Mathematics, Scientific Thinking, Analysis, Problem Solving";
+
+    }
+
+    else if (goal === "hospitality") {
+
+        career = "Travel / Hospitality Professional";
+        description = "Travel and hospitality careers involve customer service, tourism, hotels, travel planning and guest experiences.";
+        requiredSkills = "Communication, Customer Service, Management, Planning, Problem Solving";
+
+    }
+ 
+else if (goal === "content") {
+
+    career = "Content Creator";
+    description = "Content creation involves developing engaging digital content for platforms such as YouTube, Instagram and websites.";
+    requiredSkills = "Communication, Creativity, Writing, Video Skills, Social Media";
+
+}
+
+else {
+
+    career = "Career Exploration";
+    description = "Explore different career paths based on your education, skills, strengths and interests.";
+    requiredSkills = "Communication, Problem Solving, Creativity, Digital Skills, Adaptability";
+
+}
+
+
+document.getElementById("careerResult").innerText = career;
+
+// ===============================
+// CAREER MATCH SCORE
+// ===============================
+
+let matchScore = 0;
+
+if (requiredSkillList.length > 0) {
+
+    const matchedSkills =
+        requiredSkillList.filter(function(skill) {
+            return skillList.includes(skill);
+        });
+
+    matchScore = Math.round(
+        (matchedSkills.length / requiredSkillList.length) * 100
+    );
+}
+
+document.getElementById("matchScore").innerText =
+    matchScore + "%";
+
+document.getElementById("matchProgress").style.width =
+    matchScore + "%";
+
+if (matchScore >= 80) {
+
+    document.getElementById("matchMessage").innerText =
+        "Excellent match! You already have many of the skills needed for this career.";
+
+}
+else if (matchScore >= 50) {
+
+    document.getElementById("matchMessage").innerText =
+        "Good match! Develop a few more important skills to become career-ready.";
+
+}
+else {
+
+    document.getElementById("matchMessage").innerText =
+        "You have a good starting point. Follow the Skill Gap and Learning Roadmap to improve your career readiness.";
+
+}
+
+if (careerInfo[goal]) {
+
+    career = careerInfo[goal].career;
+
+    description = careerInfo[goal].description;
+
+    jobRoles = careerInfo[goal].jobs;
+
+    salary = careerInfo[goal].salary;
+
+    console.log("GOAL:", goal, "SALARY:", salary);
+}
+
+document.getElementById("careerResult").innerText = career;
+
+document.getElementById("careerDescription").innerHTML =
+    description +
+    "<br><br><strong>Job Roles:</strong><br>" +
+    jobRoles +
+    "<br><br><strong>Expected Salary:</strong><br>" +
+    salary;
+
+document.getElementById("careerDescription").innerHTML =
+    description +
+    "<br><br><strong>Job Roles:</strong><br>" +
+    jobRoles +
+    "<br><br><strong>Expected Salary:</strong><br>" +
+    salary +
+    "<br><br><strong>Recommended Skills:</strong><br>" +
+    requiredSkills;
+
+    // ===============================
+// SKILL GAP ANALYSIS
+// ===============================
+
+let requiredSkillList = [];
+
+if (goal === "software") {
+    requiredSkillList = ["html", "css", "javascript", "python", "sql"];
+}
+else if (goal === "ai") {
+    requiredSkillList = ["python", "machine-learning", "sql", "statistics"];
+}
+else if (goal === "data") {
+    requiredSkillList = ["excel", "sql", "python", "statistics", "data-analysis"];
+}
+else if (goal === "cybersecurity") {
+    requiredSkillList = ["networking", "linux", "python", "cybersecurity"];
+}
+else if (goal === "cloud") {
+    requiredSkillList = ["linux", "networking"];
+}
+else if (goal === "designer" || goal === "uiux") {
+    requiredSkillList = ["design", "creativity", "research"];
+}
+else if (goal === "business") {
+    requiredSkillList = ["marketing", "communication", "management"];
+}
+else if (goal === "banking") {
+    requiredSkillList = ["excel", "statistics", "communication"];
+}
+else if (goal === "teacher") {
+    requiredSkillList = ["communication", "writing", "leadership"];
+}
+else if (goal === "journalist") {
+    requiredSkillList = ["writing", "communication", "research"];
+}
+else if (goal === "lawyer") {
+    requiredSkillList = ["communication", "writing", "research"];
+}
+else if (goal === "ias") {
+    requiredSkillList = ["communication", "leadership", "research"];
+}
+else if (goal === "content") {
+    requiredSkillList = ["communication", "creativity", "writing", "design"];
+}
+else {
+    requiredSkillList = ["communication", "problem-solving"];
+}
+
+
+// Find missing skills
+
+let missingCareerSkills = requiredSkillList.filter(function(skill) {
+    return !skillList.includes(skill);
+});
+
+
+// Skill names for display
+
+const skillNames = {
+    html: "HTML",
+    css: "CSS",
+    javascript: "JavaScript",
+    python: "Python",
+    sql: "SQL",
+    excel: "Excel",
+    statistics: "Statistics",
+    "data-analysis": "Data Analysis",
+    "machine-learning": "Machine Learning",
+    networking: "Networking",
+    linux: "Linux",
+    cybersecurity: "Cybersecurity",
+    communication: "Communication",
+    leadership: "Leadership",
+    management: "Management",
+    marketing: "Marketing",
+    writing: "Writing",
+    creativity: "Creativity",
+    design: "Design",
+    research: "Research",
+    "problem-solving": "Problem Solving"
+};
+
+
+// Create Skill Gap HTML
+
+let skillGapHTML = "";
+
+if (missingCareerSkills.length === 0) {
+
+    skillGapHTML =
+        "<p><strong>Great!</strong> You already have the important skills required for this career.</p>";
+
+}
+else {
+
+    skillGapHTML =
+        "<p>These skills should be developed:</p><ul>";
+
+    missingCareerSkills.forEach(function(skill) {
+
+        skillGapHTML +=
+            "<li>" +
+            skillNames[skill] +
+            "</li>";
+
+    });
+
+    skillGapHTML += "</ul>";
+}
+
+
+// ===============================
+// LEARNING ROADMAP
+// ===============================
+
+roadmapSteps = [];
+
+if (goal === "software") {
+
+    roadmapSteps = [
+        "Learn HTML and CSS fundamentals.",
+        "Learn JavaScript.",
+        "Learn Python and SQL.",
+        "Build real-world projects.",
+        "Learn Git and GitHub.",
+        "Create a professional portfolio.",
+        "Apply for internships and entry-level jobs."
+    ];
+
+}
+else if (goal === "ai") {
+
+    roadmapSteps = [
+        "Learn Python programming.",
+        "Study Mathematics and Statistics.",
+        "Learn Machine Learning fundamentals.",
+        "Practice with datasets.",
+        "Build AI and Machine Learning projects.",
+        "Create an AI/ML portfolio."
+    ];
+
+}
+else if (goal === "data") {
+
+    roadmapSteps = [
+        "Learn Excel.",
+        "Learn SQL.",
+        "Learn Statistics.",
+        "Learn Python for Data Analysis.",
+        "Practice Data Visualisation.",
+        "Build Data Analysis projects.",
+        "Create a Data Analyst portfolio."
+    ];
+
+}
+else if (goal === "cybersecurity") {
+
+    roadmapSteps = [
+        "Learn computer networking.",
+        "Learn Linux.",
+        "Learn Python basics.",
+        "Study cybersecurity fundamentals.",
+        "Practice security labs.",
+        "Build cybersecurity projects.",
+        "Prepare for internships and entry-level roles."
+    ];
+
+}
+else if (goal === "cloud") {
+
+    roadmapSteps = [
+        "Learn Linux.",
+        "Learn Networking.",
+        "Understand Cloud Computing.",
+        "Learn cloud platforms.",
+        "Learn DevOps fundamentals.",
+        "Practice deployment projects.",
+        "Build a Cloud/DevOps portfolio."
+    ];
+
+}
+else if (goal === "designer" || goal === "uiux") {
+
+    roadmapSteps = [
+        "Learn design fundamentals.",
+        "Learn UI/UX principles.",
+        "Learn wireframing and prototyping.",
+        "Practice with a design tool.",
+        "Create real design projects.",
+        "Build a design portfolio.",
+        "Apply for internships or freelance work."
+    ];
+
+}
+else if (goal === "business") {
+
+    roadmapSteps = [
+        "Learn basic business concepts.",
+        "Understand customers and market research.",
+        "Learn marketing.",
+        "Develop communication and management skills.",
+        "Create a business plan.",
+        "Test a small business idea.",
+        "Learn from real-world results."
+    ];
+
+}
+else if (goal === "banking") {
+
+    roadmapSteps = [
+        "Build accounting fundamentals.",
+        "Learn financial concepts.",
+        "Improve Mathematics and Statistics.",
+        "Learn Excel.",
+        "Understand banking operations.",
+        "Prepare for relevant examinations or jobs.",
+        "Gain practical finance experience."
+    ];
+
+}
+else if (goal === "teacher") {
+
+    roadmapSteps = [
+        "Choose your subject.",
+        "Build strong subject knowledge.",
+        "Improve communication skills.",
+        "Develop presentation skills.",
+        "Complete required teaching qualifications.",
+        "Gain teaching experience."
+    ];
+
+}
+else if (goal === "journalist") {
+
+    roadmapSteps = [
+        "Improve writing skills.",
+        "Follow current affairs.",
+        "Learn research and fact-checking.",
+        "Practice news writing.",
+        "Create media projects.",
+        "Build a journalism portfolio.",
+        "Gain internship experience."
+    ];
+
+}
+else if (goal === "lawyer") {
+
+    roadmapSteps = [
+        "Study legal fundamentals.",
+        "Develop legal reasoning.",
+        "Improve communication and writing.",
+        "Learn legal research.",
+        "Complete internships.",
+        "Gain practical case experience."
+    ];
+
+}
+else if (goal === "ias") {
+
+    roadmapSteps = [
+        "Understand the Civil Services examination.",
+        "Build General Knowledge.",
+        "Follow Current Affairs.",
+        "Improve answer writing.",
+        "Practice previous-year questions.",
+        "Take mock tests.",
+        "Prepare systematically for the examination."
+    ];
+
+}
+else if (goal === "content") {
+
+    roadmapSteps = [
+        "Choose a content niche.",
+        "Learn video editing.",
+        "Improve writing and communication.",
+        "Create and publish content.",
+        "Learn social media strategy.",
+        "Study audience analytics.",
+        "Build a consistent content portfolio."
+    ];
+
+}
+else {
+
+    roadmapSteps = [
+        "Explore different career options.",
+        "Identify your strengths.",
+        "Develop required skills.",
+        "Complete relevant courses.",
+        "Build projects or practical experience.",
+        "Create a professional portfolio."
+    ];
+
+}
+
+
+// Create Roadmap HTML
+
+let roadmapHTML = "<ol>";
+
+roadmapSteps.forEach(function(step) {
+
+    roadmapHTML += "<li>" + step + "</li>";
+
+});
+
+roadmapHTML += "</ol>";
+
+
+// ===============================
+// SHOW SKILL GAP + ROADMAP
+// ===============================
+
+document.getElementById("skillGap").innerHTML =
+    skillGapHTML;
+
+document.getElementById("roadmap").innerHTML =
+    roadmapHTML;
+
+
+// ===============================
+// AUTOMATICALLY OPEN RESULT PAGE
+// ===============================
+
+document.getElementById("result").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+});
+});
+
+// ===============================
+// AI CAREER CHATBOT
+// ===============================
+
+const chatInput = document.getElementById("chatInput");
+const chatSend = document.getElementById("chatSend");
+const chatMessages = document.getElementById("chatMessages");
+
+function addChatMessage(message, type) {
+
+    const div = document.createElement("div");
+
+    div.className = type === "user"
+        ? "user-message"
+        : "bot-message";
+
+    div.innerText = message;
+
+    chatMessages.appendChild(div);
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function getCareerReply(question) {
+
+    const q = question.toLowerCase();
+
+    const selectedCareer =
+    document.getElementById("careerResult").innerText;
+
+    if (
+    q.includes("what should i learn") ||
+    q.includes("what do i learn") ||
+    q.includes("what skills do i need") ||
+    q.includes("skills do i need") ||
+    q.includes("what next") ||
+    q.includes("next step") ||
+    q.includes("roadmap")
+) {
+    if (
+        selectedCareer &&
+        selectedCareer !== "Your recommended career will appear here."
+    ) {
+        return "For " + selectedCareer + ", focus on the skills mentioned in your Skill Gap Analysis and follow the Learning Roadmap shown above. Build practical projects, improve your skills and gain internship experience.";
+    }
+
+    return "First complete the Career Assessment to get your recommended career. Then I can guide you according to that career.";
+}
+
+    if (
+        q.includes("salary") ||
+        q.includes("package") ||
+        q.includes("income")
+    ) {
+        return "Career salary depends on your skills, experience, location and company. For example, software development, AI, cybersecurity and data careers can offer strong earning potential as you gain experience.";
+    }
+
+    if (
+        q.includes("software") ||
+        q.includes("developer") ||
+        q.includes("coding")
+    ) {
+        return "For a software developer career, start with HTML, CSS, JavaScript, Python and SQL. Then build real projects, learn Git/GitHub and apply for internships.";
+    }
+
+    if (
+        q.includes("ai") ||
+        q.includes("artificial intelligence") ||
+        q.includes("machine learning")
+    ) {
+        return "For an AI/ML career, learn Python, Mathematics, Statistics and Machine Learning. After that, work with datasets and build practical AI projects.";
+    }
+
+    if (
+        q.includes("cyber") ||
+        q.includes("cybersecurity") ||
+        q.includes("hacking")
+    ) {
+        return "For cybersecurity, start with Networking and Linux, then learn Python and cybersecurity fundamentals. Practice through legal security labs and build projects.";
+    }
+
+    if (
+        q.includes("data") ||
+        q.includes("data analyst")
+    ) {
+        return "For Data Analytics, learn Excel, SQL, Statistics and Python. Practice data cleaning, analysis and visualization, then create a portfolio of projects.";
+    }
+
+    if (
+        q.includes("bca")
+    ) {
+        return "After BCA, you can explore Software Development, Data Analytics, AI/ML, Cybersecurity, Cloud Computing, Testing, UI/UX and other technology careers.";
+    }
+
+    if (
+        q.includes("course") ||
+        q.includes("learn")
+    ) {
+        return "Choose courses according to your target career. Focus on practical skills, projects and internships instead of collecting certificates only.";
+    }
+
+    if (
+        q.includes("career") ||
+        q.includes("job")
+    ) {
+        return "Start by identifying your interests and strengths. Then choose a career, learn the required skills, build projects and gain internship or practical experience.";
+    }
+
+    return "I can help you with career options, required skills, salaries, courses, internships and career roadmaps. Try asking something like: 'What skills are needed for software development?'";
+}
+
+// ===============================
+// QUICK CHAT QUESTIONS
+// ===============================
+
+function askQuickQuestion(question) {
+
+    addChatMessage(question, "user");
+
+    const reply = getCareerReply(question);
+
+    setTimeout(function() {
+        addChatMessage(reply, "bot");
+    }, 400);
+}
+
+chatSend.addEventListener("click", function() {
+
+    const question = chatInput.value.trim();
+
+    if (question === "") {
+        return;
+    }
+
+    addChatMessage(question, "user");
+
+    const reply = getCareerReply(question);
+
+    setTimeout(function() {
+        addChatMessage(reply, "bot");
+    }, 400);
+
+    chatInput.value = "";
+});
+
+chatInput.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+        chatSend.click();
+    }
+
+
+
+});
+</script>
