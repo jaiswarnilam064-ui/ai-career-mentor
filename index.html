@@ -919,7 +919,7 @@ const careerInfo = {
     let requiredSkills = "";
     let jobRoles = "";
     let salary = "";
-    let roadmapSteps = "";
+    let roadmapSteps = [];
 
 
     if (goal === "doctor") {
@@ -1105,7 +1105,59 @@ document.getElementById("careerResult").innerText = career;
 // CAREER MATCH SCORE
 // ===============================
 
+
+// ===============================
+// REQUIRED SKILLS FOR CAREER
+// ===============================
+
+let requiredSkillList = [];
+
+if (goal === "software") {
+    requiredSkillList = ["html", "css", "javascript", "python", "sql"];
+}
+else if (goal === "ai") {
+    requiredSkillList = ["python", "machine-learning", "sql", "statistics"];
+}
+else if (goal === "data") {
+    requiredSkillList = ["excel", "sql", "python", "statistics", "data-analysis"];
+}
+else if (goal === "cybersecurity") {
+    requiredSkillList = ["networking", "linux", "python", "cybersecurity"];
+}
+else if (goal === "cloud") {
+    requiredSkillList = ["linux", "networking"];
+}
+else if (goal === "designer" || goal === "uiux") {
+    requiredSkillList = ["design", "creativity", "research"];
+}
+else if (goal === "business") {
+    requiredSkillList = ["marketing", "communication", "management"];
+}
+else if (goal === "banking") {
+    requiredSkillList = ["excel", "statistics", "communication"];
+}
+else if (goal === "teacher") {
+    requiredSkillList = ["communication", "writing", "leadership"];
+}
+else if (goal === "journalist") {
+    requiredSkillList = ["writing", "communication", "research"];
+}
+else if (goal === "lawyer") {
+    requiredSkillList = ["communication", "writing", "research"];
+}
+else if (goal === "ias") {
+    requiredSkillList = ["communication", "leadership", "research"];
+}
+else if (goal === "content") {
+    requiredSkillList = ["communication", "creativity", "writing", "design"];
+}
+else {
+    requiredSkillList = ["communication", "problem-solving"];
+}
+
+
 let matchScore = 0;
+
 
 if (requiredSkillList.length > 0) {
 
@@ -1164,13 +1216,6 @@ document.getElementById("careerDescription").innerHTML =
     "<br><br><strong>Job Roles:</strong><br>" +
     jobRoles +
     "<br><br><strong>Expected Salary:</strong><br>" +
-    salary;
-
-document.getElementById("careerDescription").innerHTML =
-    description +
-    "<br><br><strong>Job Roles:</strong><br>" +
-    jobRoles +
-    "<br><br><strong>Expected Salary:</strong><br>" +
     salary +
     "<br><br><strong>Recommended Skills:</strong><br>" +
     requiredSkills;
@@ -1178,51 +1223,6 @@ document.getElementById("careerDescription").innerHTML =
     // ===============================
 // SKILL GAP ANALYSIS
 // ===============================
-
-let requiredSkillList = [];
-
-if (goal === "software") {
-    requiredSkillList = ["html", "css", "javascript", "python", "sql"];
-}
-else if (goal === "ai") {
-    requiredSkillList = ["python", "machine-learning", "sql", "statistics"];
-}
-else if (goal === "data") {
-    requiredSkillList = ["excel", "sql", "python", "statistics", "data-analysis"];
-}
-else if (goal === "cybersecurity") {
-    requiredSkillList = ["networking", "linux", "python", "cybersecurity"];
-}
-else if (goal === "cloud") {
-    requiredSkillList = ["linux", "networking"];
-}
-else if (goal === "designer" || goal === "uiux") {
-    requiredSkillList = ["design", "creativity", "research"];
-}
-else if (goal === "business") {
-    requiredSkillList = ["marketing", "communication", "management"];
-}
-else if (goal === "banking") {
-    requiredSkillList = ["excel", "statistics", "communication"];
-}
-else if (goal === "teacher") {
-    requiredSkillList = ["communication", "writing", "leadership"];
-}
-else if (goal === "journalist") {
-    requiredSkillList = ["writing", "communication", "research"];
-}
-else if (goal === "lawyer") {
-    requiredSkillList = ["communication", "writing", "research"];
-}
-else if (goal === "ias") {
-    requiredSkillList = ["communication", "leadership", "research"];
-}
-else if (goal === "content") {
-    requiredSkillList = ["communication", "creativity", "writing", "design"];
-}
-else {
-    requiredSkillList = ["communication", "problem-solving"];
-}
 
 
 // Find missing skills
